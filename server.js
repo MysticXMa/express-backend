@@ -25,7 +25,9 @@ connection.connect((err) => {
 });
 
 app.get("/api/hello", (_, res) => {
-  res.json({ message: "Hello world!" });
+  res.json({
+    message: "Hello everyone! This is just a test to check if this link works!",
+  });
 });
 
 app.get("/api/azure", async (_, res) => {
